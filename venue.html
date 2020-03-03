@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+
+<html>
+
+
+
+
+<head>
+
+
+    <title>Venue | State of the Map Asia 2020</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="script/jquery-3.3.0.min.js"></script>
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <script src="script/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style/leaflet.css">
+    <link rel="stylesheet" href="style/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+
+
+
+
+
+
+
+<body>
+
+
+    <div id="pageContainer" class="container">
+
+
+        <div id="header" class="row">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a id="bigLogo" href="index.html">
+                        <img class="logo" src="image/logo/logo.png">
+                        <span>State of the Map Asia 2020</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapseToggle" aria-controls="navbarCollapseToggle" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div id="navbarCollapseToggle" class="collapse navbar-collapse">
+                        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                            <li class="navbar-button">
+                                <a class="btn" href="program.html">Program</a>
+                            </li>
+                            <li class="navbar-button">
+                                <a class="btn" href="venue.html">Venue</a>
+                            </li>
+                            <li class="navbar-button">
+                                <a class="btn" href="https://medium.com/state-of-the-map-asia" target="_blank">Blog</a>
+                            </li>
+                            <li class="navbar-button">
+                                <a class="btn" href="code-of-conduct.html">Code of Conduct</a>
+                            </li>
+                        </ul>
+                        <a href=" https://twitter.com/SotmAsia" target="_blank" title="Follow us on Twitter">
+                            <button id="followOnTwitter" type="button" class="btn btn-light">Follow us</button>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+
+
+        <div id="venueDescription" class="row">
+            <div class="col-sm-12">
+                <h3>Venue</h3>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 venue-image">
+                <img src="image/venue.png">
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 venue-image">
+                <img src="image/collage.jpg">
+            </div>
+            <div class="col-12">
+                <a href="http://www.pdn.ac.lk" target="_blank" title="Go to site">
+                    <h5>University of Peradeniya, Peradeniya</h5>
+                </a>
+                <p></p>
+            </div>
+            <div class="col-sm-12">
+                <div class="map" id="venueMap"></div>
+            </div>
+            <div class="col-sm-12">
+                <div class="overlay map"></div>
+            </div>
+            <div id="getDirectionToVenue">
+                <a href="https://www.openstreetmap.org/directions?to=University%20of%20Peradeniya#map=15/7.2562/80.6109" target="_blank" title="Get direction on OpenStreetMap">Get direction on OpenStreetMap</a>
+            </div>
+        </div>
+
+
+
+        <div id="getToDhaka" class="row">
+            <div class="col-sm-12">
+                <h3>How to get to Peradeniya, Sri Lanka</h3>
+              <!--  <p>The airport is situated within the 15 km distance of the venue. There are multiple ways of transport. Taxi cab, Private car service are available from the airport. Moreover, ride sharing service like Uber, Pathao is available here in Bangladesh which ensures safety for the passengers. On demand transport service can also be arranged from the hosts & Hotels. For local transports traditional Rickshaw along with all other motorized vehicles are available in cheap.</p>
+                <h5>International</h5>
+                <p><a href="http://www.caab.gov.bd/airports/shahjalal.html" target="_blank">Hazrat Shahjalal International Airport (DAC)</a> is the main airport for Dhaka, with most flights arriving there.</p>
+                <h5>Rail</h5>
+                <p>If you are an Indian citizen & would prefer travelling by train, several Moitree Express & Shouhardo Express trains arrives at Kamalapur Railway Station from Kolkata, India.</p>
+                <h5>Surface</h5>
+                <p>Buses can be used by the Indian citizens travelling from Kolkata.</p> -->
+            </div>
+        </div>
+
+
+
+        <div id="accommodation" class="row">
+            <div class="col-sm-12">
+                <h3>Accommodation</h3>
+            </div>
+            <!-- <div class="col-sm-12">
+                <p>There are a few choices for accommodation in Dhaka. At the venue itself, we will be providing some arrangements for accommodation. Aside from that, a number of 3-star hotels are available around the venue, and also a couple of 5-star hotels in the city.</p>
+            </div>
+            <div class="col-sm-12">
+                <div class="map" id="accommodationMap"></div>
+            </div>
+            <div class="col-sm-12">
+                <div class="overlay map"></div>
+            </div> -->
+        </div>
+
+
+
+        <div id="visa" class="row">
+            <div class="col-sm-12">
+                <h3>Visa information</h3>
+                <!-- <p>As a sovereign state, Bangladesh requires all foreigners to obtain permission to enter its territory. Visas are issued by Bangladesh missions located throughout the world or on arrival to Bangladesh. Extensions are available at the Department of Immigration and Passport of Bangladesh, and fees vary by country. Most foreigners require a Bangladesh visa to enter Bangladesh. citizens arriving from USA, Canada, Australia, New Zealand, Russian Federation, China, Japan, Singapore, Malaysia, South Korea, UAE, Saudi Arabia (KSA), Qatar, Kuwait, Oman, Bahrain and the countries of Europe may issue visa on arrival after examining and being satisfied by the immigration authority at the Airports and Land Ports.</p>
+                <p>For visa-related information and registration, please visit <a href="https://visa.gov.bd" target="_blank">Bangladesh online visa portal</a>.</p> -->
+            </div>
+        </div>
+
+
+
+        <div id="footer" class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <span>2020 &copy; All rights reserved</span>
+                </div>
+                <div class="col-sm-4 previous">
+                    <a class="btn" href="http://2019.stateofthemap.asia" target="_blank" title="SotM Asia 2019">2019</a>
+                    <a class="btn" href="http://2018.stateofthemap.asia" target="_blank" title="SotM Asia 2018">2018</a>
+                    <a class="btn" href="https://2017.stateofthemap.asia/index.html" target="_blank" title="SotM Asia 2017">2017</a>
+                    <a class="btn" href="https://2016.stateofthemap.asia" target="_blank" title="SotM Asia 2016">2016</a>
+                </div>
+                <div class="col-sm-4">
+                    <div class="social-media-icons">
+                        <a href="https://www.youtube.com/channel/UCR7PMzU0l__u8Pt73QyHWAQ" target="_blank">
+                            <img class="icon" title="Find us on YouTube" src="image/icon/youtube.png">
+                        </a>
+                        <a href="https://www.instagram.com/sotm_asia" target="_blank">
+                            <img class="icon" title="Find us on Instagram" src="image/icon/instagram.png">
+                        </a>
+                        <a href="https://www.facebook.com/SotmAsia" target="_blank">
+                            <img class="icon" title="Find us on Facebook" src="image/icon/facebook.png">
+                        </a>
+                        <a href="https://t.me/OpenStreetMapAsia" target="_blank">
+                            <img class="icon" title="Find us on Telegram" src="image/icon/telegram.png">
+                        </a>
+                        <a href="https://twitter.com/SotmAsia" target="_blank">
+                            <img class="icon" title="Find us on Twitter" src="image/icon/twitter.png">
+                        </a>
+                        <a href="https://www.flickr.com/photos/185386731@N07" target="_blank">
+                            <img class="icon" title="Find us on Flickr" src="image/icon/flickr.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+
+
+
+
+
+
+
+
+<script src="script/leaflet.js"></script>
+
+<script>
+
+
+
+    let markerIcon = L.icon({
+        iconUrl: "image/icon/marker-icon.png",
+        iconSize: [30, 50],
+        iconAnchor: [(30/2), 50],
+        shadowUrl: "image/icon/marker-shadow.png",
+        shadowSize: [50, 50],
+        shadowAnchor: [(30/2), 50],
+        popupAnchor: [0, (-50+1)],
+    });
+
+    let sotmMarkerIcon = L.icon({
+        iconUrl: "image/icon/marker-icon-sotma.png",
+        iconSize: [66, 85],
+        iconAnchor: [(66/2), 85],
+        shadowUrl: "image/icon/marker-shadow.png",
+        shadowSize: [(85+17), (85+17)],
+        shadowAnchor: [(66/2), (85+17+1)],
+        popupAnchor: [0, (-85+7)],
+    });
+
+    let tileURL = "https://tile.openstreetmap.org/{z}/{x}/{y}.png";
+
+    let venueLatLong = [7.2563, 80.5943];
+
+    // Lat-longs, names and website addresses for suggested hotels.
+    let accommData = [
+        [ [23.74959, 90.39444], "Pan Pacific Sonargaon",         "https://www.panpacific.com/en/hotels-and-resorts/pp-dhaka.html"            ],
+        [ [23.74109, 90.39668], "InterContinental Dhaka",        "https://www.ihg.com/intercontinental/hotels/us/en/dhaka/dachb/hoteldetail" ],
+        [ [23.73981, 90.38079], "Ambrosia Guest House",          "https://guest-house-483.business.site"                                     ],
+        [ [23.79228, 90.40657], "Innotel Luxury Business Hotel", "https://www.innotelbatonrouge.com"                                         ],
+        [ [23.79298, 90.40426], "Nordic Hotel",                  "http://www.nordichotels.com.bd"                                            ],
+        [ [23.79330, 90.40455], "Hotel Sarina",                  "https://www.sarinahotel.com"                                               ],
+        [ [23.73838, 90.37770], "Hotel Ambala Inn",              "http://www.ambalainn.com"                                                  ],
+        [ [23.79082, 90.40302], "Platinum Suites",               "http://www.platinumhotels.com.bd/platinum-suites/contact.php"              ],
+        [ [23.79077, 90.40359], "Platinum Grand",                "http://www.platinumhotels.com.bd/platinum-grand"                           ],
+        [ [23.79038, 90.41267], "Amari Dhaka",                   "https://www.amari.com/dhaka"                                               ],
+        [ [23.75781, 90.39047], "Hotel Givenci",                 "http://hotel-givenci.dhaka-hotel.com/en"                                   ],
+    ];
+
+    // Create map for venue.
+    let venueMap = L.map("venueMap");
+    venueMap.setView(venueLatLong, 15);
+    L.tileLayer(tileURL).addTo(venueMap);
+
+    // Put marker on venue.
+    let venueMarker = L.marker(venueLatLong, {icon: sotmMarkerIcon});
+    venueMarker
+        .addTo(venueMap)
+        .bindPopup("University of Peradeniya")
+            .openPopup();
+
+    // Create map for hotels.
+    let accommMap = L.map("accommodationMap");
+    L.tileLayer(tileURL).addTo(accommMap);
+
+    let markerGroup = new L.featureGroup();
+
+    // Add venue marker to accommodation map too.
+    let accommVenueMarker = L.marker(venueLatLong, {icon: sotmMarkerIcon});
+    accommVenueMarker
+        .addTo(accommMap)
+        .bindPopup("Krishibid Institution Bangladesh (KIB)");
+
+    // Put markers on all hotels.
+    for (let c=0; c<accommData.length; ++c) {
+
+        // Link website address to pop-up text.
+        let popupContentHTML = "<a href='"
+            + accommData[c][2]
+            + "'"
+            + " target='_blank'"
+            + " title='Go to site'"
+            + ">"
+            + accommData[c][1]
+            + "</a>";
+
+        let marker = L.marker(accommData[c][0], {icon: markerIcon});
+        marker
+            .addTo(accommMap)
+            .bindPopup(popupContentHTML, {autoClose: false})
+                .openPopup();
+
+        // Add each marker to group to get screen boundary that contains all
+        // of them.
+        marker.addTo(markerGroup);
+
+    }
+
+    // Fit all markers within screen.
+    accommMap.fitBounds(markerGroup.getBounds(), {padding: [25, 25]});
+
+
+
+</script>
+
+
+
+
+
+
+
+
+</html>

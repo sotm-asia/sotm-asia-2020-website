@@ -1,0 +1,1051 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/*                             Bootstrap override                            */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+a.btn:not([href]):not([tabindex]) {
+	color: #fff;
+}
+a.btn:not([href]):not([tabindex]):hover {
+	color: #fff;
+}
+
+
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/*                              Leaflet override                             */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+.leaflet-popup-content {
+	padding: 5px 0;
+}
+
+
+
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/*                                  General                                  */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+:root {
+	--footer-text-color: #777;
+	--sponsor-header-color: #aaa;
+	--schedule-individual-venue-text-color: #aaa;
+	--schedule-individual-venue-font-size: 14px;
+	--map-height: 500px;
+	--logo-color-1a: rgba(176, 56, 20, 1);
+	--logo-color-1b: rgba(106, 54, 54, 1);
+	--logo-color-1c: rgba(151, 98, 98, 1);
+	--logo-color-1d: rgba(194, 193, 210, 1);
+	--logo-color-1e: rgba(209, 208, 211, 1);
+	--logo-color-2a: rgba(5, 104, 57, 1);
+	--logo-color-3a: rgba(30, 55, 191, 1);
+	--logo-color-3c: rgba(126, 105, 230, 1);
+}
+html, body {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	font-family: 'Arvo', cursive;
+}
+a {
+	text-decoration: none;
+	color: var(--logo-color-1a);
+}
+a:hover {
+	text-decoration: none;
+	color: var(--logo-color-2a);
+}
+p {
+	text-align: justify;
+}
+
+
+
+
+h3,
+h5 {
+	font-weight: 600;
+}
+h3 {
+	color: #fff;
+	margin: 0px 0px 30px 0px;
+}
+h5 {
+	font-size: 1.5rem;
+}
+
+
+
+
+#sponsors h3,
+#lastYear h3,
+#becomeSponsor h3,
+#venue h3,
+#venueDescription h3,
+#getToDhaka h3,
+#accommodation h3,
+#visa h3,
+#programDescription h3,
+#regInstruction h3,
+#codeOfConduct h3,
+#boxes .box {
+	background-color: var(--logo-color-1c);
+	border-left-color: var(--logo-color-1a);
+	border-left-style: solid;
+	border-left-width: 10px;
+	padding: 5px 10px;
+	padding-top: 10px;
+}
+#boxes .box {
+	border-left-width: 20px;
+}
+#boxes .box.closed,
+#boxes .box.closed a {
+	color: var(--logo-color-3a);
+}
+#boxes .box.closed a:hover {
+	color: var(--logo-color-2a);
+}
+
+
+
+
+
+div.image-fit {
+	height: 100%;
+	background-size: cover;
+}
+button {
+	text-align: center;
+}
+img.icon {
+	height: 30px;
+	width: 30px;
+}
+div.row:not(#header) {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	padding: 0px 16px;
+}
+a.button {
+	border-radius: 10px;
+	padding: 10px;
+	line-height: 3em;
+}
+a.button:hover {
+	border: 1px solid #ccc;
+	cursor: pointer;
+	color: #333;
+	background-color: #ccc;
+}
+
+.button,
+a.btn {
+	background-color: var(--logo-color-1b);
+	color: #fff;
+	font-weight: 600;
+	border-right: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.button:hover,
+a.btn:hover {
+	cursor: pointer;
+	border-right-color: var(--logo-color-1a);
+	border-bottom-color: var(--logo-color-1a);
+}
+
+.full-btn {
+	width: 100%;
+}
+
+div.cross {
+	display: inline-block;
+}
+
+.cross:hover {
+	cursor: pointer;
+}
+
+.hidden {
+	display: none;
+}
+
+
+
+
+
+div#header.row {
+	margin-top: 0px;
+	margin-bottom: 50px;
+	background-color: var(--logo-color-1b);
+}
+#header img.logo {
+	width: 55px;
+}
+#header .navbar-button {
+	margin: 10px 10px 10px -10px;		/* negative left margin to align options below header logo */
+}
+#header .navbar-button a {
+	margin: 0 5px;
+}
+#logo span {
+	padding: 0px 0px 0px 10px;
+}
+#header #followOnTwitter.btn {
+	margin: 10px 0 10px -5px;
+	padding-top: 10px;
+}
+#header #followOnTwitter.btn:before {
+	padding: 0px 30px 0px 0px;
+	height: 20px;
+	width: 20px;
+	content: url("../image/icon/follow-twitter.png");
+	display: inline-flex;
+	vertical-align: middle;
+}
+
+
+
+
+
+#footer {
+	padding: 15px 16px;
+	color: #fff;
+	background-color: var(--logo-color-1b);
+}
+#footer div.row {
+	display: flex;
+	align-items: center;
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+}
+#footer img.icon {
+	margin: -5px 0px 0px 5px;
+	padding: 5px;
+	height: 30px;
+	width: auto;
+	float: right;
+}
+#footer img.icon:hover {
+	filter: grayscale(0);
+	transition: filter 1s ease;
+}
+#footer div.previous {
+	text-align: center;
+}
+#footer .previous a.btn {
+	margin: 5px;
+	padding: 5px 10px;
+	padding-top: 10px;
+	line-height: initial;
+}
+
+
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/*                                  404 page                                 */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+div#img404 {
+	height: calc(100vh - 300px);
+	opacity: 0.6;
+	background-image: url("../image/404.png");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+span#img404Cap {
+	text-align: center;
+	display: block;
+	opacity: 0.7;
+	margin-bottom: 65px;
+}
+
+
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/*                                  Home page                                */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+#venue .image-fit {
+	background-image: url('../image/venue.png');
+}
+#venue div.info {
+	padding: 30px;
+}
+
+
+
+
+div#landingImage.row {
+	margin-top: 0;
+	padding: 0;
+}
+
+#landingImage > a {
+	width: 100%;
+}
+
+#landingImage > a:hover {
+	opacity: 0.9;
+}
+
+#landingImage img {
+	margin-top: -50px;
+	width: 100%;
+}
+
+
+
+
+div#firstScreen.row {
+	margin-top: -90px;
+}
+
+@media (max-width: 992px) {
+	#firstScreen .info {
+		margin-bottom: 50px;
+	}
+}
+
+@media (min-width: 992px) {
+	#firstScreen .info > div {
+		padding-right: 60px;
+	}
+}
+
+#bigLogo img.logo {
+	background-color: #fff;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+#bigLogo span {
+	color: #fff;
+	font-weight: 600;
+	font-size: 24px;
+	vertical-align: sub;
+}
+@media (max-width: 576px) {
+	#bigLogo span {
+		font-size: 16px;
+	}
+}
+#firstScreen p {
+	font-size: 1.4rem;
+}
+@media (min-width: 576px) and (max-width: 1200px) {
+	#firstScreen p {
+		font-size: 1.2rem;
+	}
+}
+#firstScreen a.btn.closed {
+	background-color: var(--logo-color-3c);
+}
+#firstScreen a.btn.closed:hover {
+	cursor: default;
+	border-color: var(--logo-color-3a);
+}
+#firstScreen .affiliation {
+	margin: 40px 0px 0px 0px;
+}
+#firstScreen .affiliation > div.cont {
+	display: inline-block;
+	margin-bottom: 20px;
+	width: 250px;
+}
+#firstScreen .affiliation img.logo {
+	max-width: 200px;
+	vertical-align: middle;
+}
+#firstScreen .affiliation img.logo:hover {
+	transform: scale(1.2);
+	transition: 1s ease;
+}
+#firstScreen .date {
+	font-size: 30px;
+	color: var(--logo-color-1a);
+	font-weight: 600;
+}
+
+div#comingSoon {
+	border: 2px solid rgba(236, 224, 106, 1);
+	border-radius: 5px;
+	display: none;
+	margin: 20px 0;
+	padding: 10px;
+	text-align: center;
+}
+
+#comingSoon .cross::after {
+	content: "\02715";
+	margin: -35px 15px 0 0;
+	padding: 5px;
+	position: absolute;
+	right: 0;
+}
+
+
+
+
+
+#TweetUpdate {
+	border: 1px solid #1da1f2;
+}
+
+#TweetUpdate iframe {
+	min-height: 350px !important;
+}
+
+
+
+
+
+#sponsors div.cont {
+	text-align: center;
+}
+
+#sponsors > div.cont {
+	text-align: left;
+}
+
+@media (max-width: 992px) {
+	#sponsors > div.cont:nth-child(2) {
+		margin-top: 70px;
+	}
+}
+
+#sponsors div.box {
+	margin: 10px 15px;
+	display: inline-block;
+}
+
+#sponsors div.box span.text.title {
+	position: absolute;
+	background-color: #fff;
+	padding: 5px 10px;
+	margin-top: -7px;
+	margin-left: 15px;
+	font-weight: 700;
+}
+
+#sponsors img.logo {
+	border: 1px solid #aaa;
+	padding: 20px;
+	margin: 5px;
+}
+
+#sponsors .silver img.logo {
+	width: 280px;
+}
+
+#sponsors .bronze img.logo {
+	width: 240px;
+}
+
+#sponsors .supporter img.logo,
+#sponsors .media img.logo {
+	width: 200px;
+}
+
+#sponsors img.logo.resize-h[src*='emk'] {
+	height: 180px;
+	width: auto;
+}
+
+#sponsors img.logo.resize-w[src*='eutech'] {
+	height: auto;
+	width: 140px;
+}
+
+
+
+
+
+#boxes .box {
+	margin: 20px 5px;
+	padding: 30px;
+}
+a.box-link {
+	color: inherit;
+}
+a.box-link:hover {
+	opacity: 0.8;
+}
+#boxes .box h3 {
+    margin: 0px 0px 20px 0px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+#boxes .box p {
+    font-size: .9rem;
+}
+
+
+
+
+
+div.image-fit {
+	min-height: 400px;
+}
+
+#lastYear div.image-fit {
+	background-image: url("../image/last-year.jpg");
+}
+#lastYear a.report {
+	margin: 10px 0;
+}
+
+
+
+
+
+#becomeSponsor .col-sm-6 {
+	padding: 10px 40px;
+}
+#becomeSponsor table {
+	display: block;
+}
+#becomeSponsor table td.header {
+	border-bottom: 1px solid var(--sponsor-header-color);
+	color: var(--sponsor-header-color);
+}
+#becomeSponsor table.left {
+	float: right;
+}
+#becomeSponsor table.left td {
+	text-align: right;
+}
+#becomeSponsor img.logo {
+	margin: 0px 20px;
+	height: 70px;
+}
+
+
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/*                                Program page                               */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+#programDescription a.button.register:hover {
+	border: 1px solid lightgreen;
+	background-color: lightgreen;
+}
+
+
+
+
+
+div.schedule.row {
+	margin-bottom: 150px;
+}
+.schedule {
+	--session-column-width: 7%;
+	--time-column-width: 10%;
+	--hall-column-width: 23%;			/* multiplied by 3 */
+	--remark-column-width: 14%;
+	display: block;
+	text-align: center;
+	min-width: 450px;
+}
+
+.schedule > .cont {
+	margin: 100px 0;
+}
+
+.schedule table {
+	margin: 40px 0;
+	width: 100%;
+	border-spacing: 3px;
+	border-collapse: separate;
+}
+.schedule td {
+	background-color: var(--logo-color-1e);
+	line-height: 1.3rem;
+	padding: 10px 8px;
+	padding-top: 15px;
+}
+.schedule td:hover {
+	cursor: default;
+	background-color: var(--logo-color-3c);
+}
+.schedule td span.time {
+	text-transform: uppercase;
+}
+.schedule span.time small.to {
+	font-size: 0.7rem;
+	line-height: 1.75rem;
+}
+.schedule span.time small.to::after {
+	content: 'to';
+	display: block;
+}
+.schedule th {
+	font-size: 1.1em;
+	padding: 8px;
+	padding-top: 16px;
+	background-color: var(--logo-color-1c);
+	color: #fff;
+	height: 5rem;
+}
+.schedule th.time {
+	width: var(--time-column-width);
+}
+
+.schedule span.block {
+	display: block;
+}
+
+.schedule span.type {
+	text-transform: uppercase;
+	font-weight: 700;
+	margin: 15px 0;
+}
+
+.schedule span.title {
+	margin: 5px 0;
+	font-weight: 700;
+	font-size: 1.05rem;
+}
+
+.schedule span.speaker {
+	margin: 18px 0 15px;
+}
+
+.schedule span.speaker:not(.s-no-org)::after {
+	display: block;
+	margin: 10px auto 0;
+	content:  ' ';
+	width: 10%;
+	height: 0;
+	border-bottom: 1px solid var(--logo-color-1b);
+}
+
+.schedule span.country {
+	margin-top: 7px;
+	font-weight: 700;
+	font-variant: small-caps;
+}
+
+.schedule span.block.country::after,
+.schedule span.block.org::after {
+	display: block;
+}
+
+.schedule span.org.o-bbs::after {
+    content: "Bangladesh Bureau of Statistics";
+}
+
+.schedule span.org.o-boil::after {
+	content: "Bangladesh Open Innovation Lab (BOIL)";
+}
+
+.schedule span.org.o-hot::after {
+	content: "Humanitarian OpenStreetMap Team (HOT)";
+}
+
+.schedule span.org.o-lil::after {
+	content: "Kathmandu Living Lab";
+}
+
+.schedule span.org.o-osmin::after {
+	content: "OpenStreetMap India";
+}
+
+.schedule span.org.o-uc::after {
+	content: "University of Canterbury";
+}
+
+.schedule span.org.o-ymdc::after {
+	content: "YouthMappers Dhaka College";
+}
+
+.schedule span.country.c-bd::after {
+	content: "Bangladesh";
+}
+
+.schedule span.country.c-in::after {
+	content: "India";
+}
+
+.schedule span.country.c-id::after {
+	content: "Indonesia";
+}
+
+.schedule span.country.c-jp::after {
+	content: "Japan";
+}
+
+.schedule span.country.c-np::after {
+	content: "Nepal";
+}
+
+.schedule span.country.c-ph::after {
+	content: "Philippines";
+}
+
+
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/*                                Venue page                                 */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+#venueDescription .venue-image img {
+	margin-bottom: 20px;
+	width: 100%;
+}
+@media (min-width: 768px) {
+  #venueDescription .venue-image img {
+    max-height: 200px;
+  }
+}
+@media (min-width: 992px) {
+  #venueDescription .venue-image img {
+    max-height: 280px;
+  }
+}
+@media (min-width: 1200px) {
+  #venueDescription .venue-image img {
+    max-height: 330px;
+  }
+}
+
+div.map {
+	height: var(--map-height);
+	margin: 30px 0px 0px 0px;
+	background-color: lightgray;
+}
+div.map.overlay {
+	position: relative;
+	margin: calc(0px - var(--map-height)) 0px 0px 0px;
+	z-index: 999999;
+	pointer-events: none;
+	box-shadow: inset 0px 0px 10px 0px #333;
+	background-color: transparent;
+}
+#getDirectionToVenue {
+    margin: 15px 0 0 20px;
+    font-weight: 600;
+}
+#getDirectionToVenue::after {
+   content: '\27a4';
+   color: gray;
+   display: inline-block;
+   transition: all 1s ease;
+}
+#getDirectionToVenue:hover::after {
+   color: cadetblue;
+   transform: rotateY(360deg);
+}
+
+
+
+
+
+#getToDhaka p.reference {
+	font-style: italic;
+	text-align: right;
+}
+
+
+
+
+
+#accommodation div.accommodation-image {
+	margin: 0px 0px 20px 0px;
+	height: 300px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#accommodation .accommodation-image.image-1 {
+	background-image: url("../image/accommodation-1.jpeg");
+}
+#accommodation .accommodation-image.image-2 {
+	background-image: url("../image/accommodation-2.jpeg");
+}
+#accommodation .accommodation-image.image-3 {
+	background-image: url("../image/accommodation-3.png");
+}
+#accommodation .accommodation-image.image-4 {
+	background-image: url("../image/accommodation-4.png");
+}
+
+
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/*                        Code of conduct page page                          */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+#codeOfConduct center {
+	/*margin: 50px 0;*/
+}
+#codeOfConduct center h3 {
+	line-height: 1.5em;
+}
+#codeOfConduct ul {
+	/*margin: 0px 40px 0px 20px;*/
+}
+#codeOfConduct li {
+	margin: 5px 0px 0px 0px;
+	list-style: circle;
+	text-align: justify;
+}
+
+
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/*                             Registration page                             */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+#regInstruction {
+	margin-bottom: 100px;
+}
+
+#form form {
+	max-width: 550px;
+	margin: auto;
+}
+
+form div.section {
+	margin-bottom: 50px;
+}
+
+form p.block {
+	text-align: center;
+}
+
+form span.label {
+	display: inline-block;
+	text-align: left;
+	width: 230px;
+}
+
+form span.label.required::after {
+	color: rgba(210, 16, 16, 1);
+	content: '*';
+	display: inline-block;
+	padding-left: 2px;
+}
+
+form div.cont {
+	text-align: center;
+}
+
+form div.cont > fieldset.box {
+	margin: 10px 0;
+	padding: 10px 15px;
+	display: inline-block;
+	border: 1px dotted gray;
+}
+
+fieldset.box legend {
+	margin-bottom: 0;
+	display: inline-block;
+	padding: 0 10px;
+	text-align: left;
+	width: unset;
+	font-size: 1rem;
+}
+
+form input,
+form select {
+	padding: 3px 10px;
+	padding-top: 6px;
+	width: 250px;
+}
+
+form input[name] {
+	border: 2px solid initial;
+}
+
+form input[name].error {
+	border-color: rgba(251, 122, 147, 1);
+	border-top: 2px solid rgba(251, 122, 147, 1);
+	border-left: 2px solid rgba(251, 122, 147, 1);
+}
+
+form input[name].error:focus {
+	border-color: lightblue;
+	border-top: 2px solid lightblue;
+	border-left: 2px solid lightblue;
+}
+
+form input[name].success {
+	border-color: lightgreen;
+}
+
+form p.footnote {
+	font-size: 0.8rem;
+	text-align: right;
+}
+
+form p.footnote.mandatory {
+	color: rgba(210, 16, 16, 1);
+}
+
+
+
+
+
+div#disclaimer.row {
+	margin-top: -50px;
+}
+
+#disclaimer p {
+	width: 100%;
+	text-align: center;
+}
+
+
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/*                        Registration success page                          */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+div#regSuccessMsg {
+	height: calc(100vh - 210px);
+}
+
+#regSuccessMsg > div.cont {
+	width: 100%;
+	padding: 100px 0;
+}
+
+#regSuccessMsg span.text {
+	display: block;
+	text-align: center;
+}
+
+#regSuccessMsg span.text.title {
+	font-size: 30px;
+}
+
+
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/*                           Ticket download page                            */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+div#ticketIDInput {
+	height: calc(100vh - 210px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#ticketIDInput > div.cont {
+	width: 600px;
+	text-align: center;
+}
+
+#ticketIDInput > .cont > .cont {
+	margin: 20px 0;
+}
+
+#ticketIDInput input[type='text'] {
+	margin: 0 20px;
+}
+
+#ticketIDInput label.agree {
+	margin: 20px 0;
+}
+
+#ticketIDInput input[type='checkbox'] {
+	margin-right: 3px;
+}
+
+#ticketIDInput .text.message {
+	padding: 10px 0;
+	display: block;
+	color: initial;
+	border: 1px solid transparent;
+}
+
+#ticketIDInput .message.error {
+	color: darkred;
+	border-color: rgba(251, 122, 147, 1);
+}
+
+#ticketIDInput .message.success {
+	color: green;
+	border-color: lightgreen;
+}
